@@ -12,10 +12,9 @@ public class BasePlusCommissionEmployee extends CommissionedEmployee {
 
     @Override
     public String toString() {
-        return "BasePlusCommissionEmployee{" +
+        return super.toString() +
+                "BasePlusCommissionEmployee{" +
                 "baseSalary=" + baseSalary +
-                ", grossSales=" + grossSales +
-                ", commissionRate=" + commissionRate +
                 '}';
     }
 }
