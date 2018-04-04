@@ -31,12 +31,14 @@ public class Employee {
 
     public String getSocialSecurityNumber() { return socialSecurityNumber; }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", socialSecurityNumber='" + socialSecurityNumber + '\'' +
+    // @Override
+    public String toString(String extraKeys) {
+        if (extraKeys.length() > 0) extraKeys = ",\n  " + extraKeys;
+        return this.getClass().getSimpleName() + '{' +
+                "\n  firstName='" + firstName + '\'' +
+                ",\n  lastName='" + lastName + '\'' +
+                ",\n  socialSecurityNumber='" + socialSecurityNumber + '\'' +
+                extraKeys + '\n' +
                 '}';
     }
 }

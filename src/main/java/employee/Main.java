@@ -8,6 +8,6 @@ public class Main {
         BasePlusCommissionEmployee commishGal = new BasePlusCommissionEmployee("commish", "gal", "789", 3000, 20, 100);
 
         Employee[] employees = new Employee[]{hourBoy, salaryGirl, commishGuy, commishGal};
-        for (Employee e : employees) System.out.println(e.earnings());
+        for (Employee e : employees) System.out.println(e);
     }
 }
