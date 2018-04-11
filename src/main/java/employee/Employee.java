@@ -5,13 +5,15 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String socialSecurityNumber;
+    private HireDate dateHired;
 
     protected double earnings;
 
-    public Employee(String firstName, String lastName, String socialSecurityNumber) {
+    public Employee(String firstName, String lastName, String socialSecurityNumber, HireDate dateHired) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.socialSecurityNumber = socialSecurityNumber;
+        this.dateHired = dateHired;
         count++;
 
         System.out.printf("Constructed employee %s %s |  count=%d%n", firstName, lastName, count);
@@ -30,6 +32,8 @@ public class Employee {
     public void setLastName(String lastName) { this.lastName = lastName; }
 
     public String getSocialSecurityNumber() { return socialSecurityNumber; }
+
+    public HireDate getDateHired() { return dateHired; }
 
     // @Override
     public String toString(String extraKeys) {

@@ -3,8 +3,8 @@ package employee;
 public class SalariedEmployee extends Employee {
     private double salary;
 
-    public SalariedEmployee(String firstName, String lastName, String socialSecurityNumber, double salary) {
-        super(firstName, lastName, socialSecurityNumber);
+    public SalariedEmployee(String firstName, String lastName, String socialSecurityNumber, HireDate dateHired, double salary) {
+        super(firstName, lastName, socialSecurityNumber, dateHired);
         this.salary = salary;
 
         this.earnings = this.salary;

@@ -3,8 +3,8 @@ package employee;
 public class BasePlusCommissionEmployee extends CommissionedEmployee {
     private double baseSalary;
 
-    public BasePlusCommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales, double commissionRate, double baseSalary) {
-        super(firstName, lastName, socialSecurityNumber, grossSales, commissionRate);
+    public BasePlusCommissionEmployee(String firstName, String lastName, String socialSecurityNumber, HireDate dateHired, double grossSales, double commissionRate, double baseSalary) {
+        super(firstName, lastName, socialSecurityNumber, dateHired, grossSales, commissionRate);
         this.baseSalary = baseSalary;
 
         this.earnings = this.baseSalary + this.grossSales * (this.commissionRate / 100);
